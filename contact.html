@@ -50,6 +50,50 @@
     <link href="css/styleguide.css" rel="stylesheet" />
     <link href="css/components.css" rel="stylesheet" />
     <link href="css/style-new.css" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <style>
+      /* Override autofill styles */
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus,
+      textarea:-webkit-autofill:active {
+        -webkit-text-fill-color: white !important;
+        -webkit-box-shadow: 0 0 0 30px #1c1d20 inset !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
+      /* Ensure placeholder text remains visible */
+      ::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1;
+      }
+
+      /* Ensure text color is white for all form inputs */
+      .field {
+        color: white !important;
+      }
+    </style>
   </head>
 
   <body data-barba="wrapper">
@@ -69,54 +113,6 @@
             <div class="dot"></div>
           </h2>
           <h2>
-            Work
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            TWICE
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            The Damai
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            FABRIC™
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            Aanstekelijk
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            Base Create
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            AVVR
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            GraphicHunters
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            Future Goals
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            Atypikal
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            One:Nil
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            Andy Hardy
-            <div class="dot"></div>
-          </h2>
-          <h2>
             About
             <div class="dot"></div>
           </h2>
@@ -126,10 +122,6 @@
           </h2>
           <h2>
             Success
-            <div class="dot"></div>
-          </h2>
-          <h2>
-            Archive
             <div class="dot"></div>
           </h2>
           <h2>
@@ -186,18 +178,6 @@
                 >
                   <span class="btn-text">
                     <span class="btn-text-inner">Home</span>
-                  </span>
-                </a>
-              </li>
-              <li class="btn btn-link">
-                <a
-                  href="work.html"
-                  class="btn-click magnetic"
-                  data-strength="24"
-                  data-strength-text="12"
-                >
-                  <span class="btn-text">
-                    <span class="btn-text-inner">Work</span>
                   </span>
                 </a>
               </li>
@@ -278,18 +258,6 @@
               </div>
             </div>
             <ul class="links-wrap">
-              <li class="btn btn-link">
-                <a
-                  href="work.html"
-                  class="btn-click magnetic"
-                  data-strength="20"
-                  data-strength-text="10"
-                >
-                  <span class="btn-text">
-                    <span class="btn-text-inner">Work</span>
-                  </span>
-                </a>
-              </li>
               <li class="btn btn-link">
                 <a
                   href="about.html"
@@ -383,8 +351,8 @@
               <div class="flex-col">
                 <form
                   class="form"
-                  method="post"
-                  action="contact.html"
+                  method="POST"
+                  action="https://formspree.io/f/xnqkdrqo"
                   enctype="multipart/form-data"
                   novalidate=""
                 >
@@ -394,10 +362,10 @@
                       class="field"
                       type="text"
                       id="form-tel"
-                      name="tel"
-                      value="7012229293"
+                      name="phone"
+                      value=""
                       required=""
-                      placeholder="7012229293"
+                      placeholder="Your Phone Number"
                     />
                   </div>
                   <div class="form-col">
@@ -428,7 +396,7 @@
                   </div>
                   <div class="form-col">
                     <h5>03</h5>
-                    <label class="label" for="email"
+                    <label class="label" for="company"
                       >What's the name of your organization?</label
                     >
                     <input
@@ -443,21 +411,6 @@
                   </div>
                   <div class="form-col">
                     <h5>04</h5>
-                    <label class="label" for="email"
-                      >What services are you looking for?</label
-                    >
-                    <input
-                      class="field"
-                      type="text"
-                      id="form-service"
-                      name="service"
-                      value=""
-                      required=""
-                      placeholder="Web Design, Web Development ..."
-                    />
-                  </div>
-                  <div class="form-col">
-                    <h5>05</h5>
                     <label class="label" for="message">Your message</label>
                     <textarea
                       class="field"
@@ -496,37 +449,10 @@
                 </form>
               </div>
               <div class="flex-col">
-                <h5>Contact Details</h5>
-                <ul class="links-wrap">
-                  <li class="btn btn-link btn-link-external">
-                    <a
-                      href="mailto:sallucnr@gmail.com"
-                      class="btn-click magnetic"
-                      data-strength="20"
-                      data-strength-text="10"
-                    >
-                      <span class="btn-text">
-                        <span class="btn-text-inner">sallucnr@gmail.com</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="btn btn-link btn-link-external">
-                    <a
-                      href="tel:7012229293"
-                      class="btn-click magnetic"
-                      data-strength="20"
-                      data-strength-text="10"
-                    >
-                      <span class="btn-text">
-                        <span class="btn-text-inner">7012229293</span>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
                 <h5>Business Details</h5>
                 <ul class="links-wrap">
                   <li><p>Salman Moosa</p></li>
-                  <li><p>Location: Kannur, Kerala, India</p></li>
+                  <li><p>Location: Kerala, India</p></li>
                 </ul>
                 <h5>Socials</h5>
                 <ul class="links-wrap">
@@ -557,7 +483,7 @@
               <div class="flex-col">
                 <div class="credits">
                   <h5>Version</h5>
-                  <p>2024 © Edition</p>
+                  <p>2025 © Edition</p>
                 </div>
                 <div></div>
               </div>
