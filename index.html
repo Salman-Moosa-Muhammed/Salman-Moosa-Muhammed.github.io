@@ -12,6 +12,22 @@
     />
     <title>• Salman Moosa •</title>
 
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="preconnect" href="//cdn.jsdelivr.net">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/style-new.css" as="style">
+    <link rel="preload" href="js/index-new.js" as="script">
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/locomotive-scroll.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/styleguide.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/components.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/style-new.css" />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -66,12 +82,17 @@
       type="font/otf"
       crossorigin="anonymous"
     />
+    <style>
+      /* Font face declaration */
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: url('assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/locomotive-scroll.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/style-new.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
@@ -198,32 +219,6 @@
             <div class="socials">
               <h5>Socials</h5>
               <ul>
-                <li class="btn btn-link btn-link-external">
-                  <a
-                    href="https://www.instagram.com"
-                    target="_blank"
-                    class="btn-click magnetic"
-                    data-strength="20"
-                    data-strength-text="10"
-                  >
-                    <span class="btn-text">
-                      <span class="btn-text-inner">Instagram</span>
-                    </span>
-                  </a>
-                </li>
-                <li class="btn btn-link btn-link-external">
-                  <a
-                    href="https://www.twitter.com"
-                    target="_blank"
-                    class="btn-click magnetic"
-                    data-strength="20"
-                    data-strength-text="10"
-                  >
-                    <span class="btn-text">
-                      <span class="btn-text-inner">Twitter</span>
-                    </span>
-                  </a>
-                </li>
                 <li class="btn btn-link btn-link-external">
                   <a
                     href="https://www.linkedin.com/in/salman-moosa/"
@@ -634,32 +629,6 @@
                   <div class="socials">
                     <h5>Socials</h5>
                     <ul>
-                      <li class="btn btn-link btn-link-external">
-                        <a
-                          href="https://www.instagram.com"
-                          target="_blank"
-                          class="btn-click magnetic"
-                          data-strength="20"
-                          data-strength-text="10"
-                        >
-                          <span class="btn-text">
-                            <span class="btn-text-inner">Instagram</span>
-                          </span>
-                        </a>
-                      </li>
-                      <li class="btn btn-link btn-link-external">
-                        <a
-                          href="https://www.twitter.com"
-                          target="_blank"
-                          class="btn-click magnetic"
-                          data-strength="20"
-                          data-strength-text="10"
-                        >
-                          <span class="btn-text">
-                            <span class="btn-text-inner">Twitter</span>
-                          </span>
-                        </a>
-                      </li>
                       <li class="btn btn-link btn-link-external">
                         <a
                           href="https://www.linkedin.com/in/salman-moosa/"
